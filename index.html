@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- content= widht indica que px debe tener la pantalla, el device-width toma el tamaño de la pantalla actual del usuario solo se maneja en px
+    el zoom lo maneja en la pantalla initial-scale=1.0;  es el zoom al cien por ciento-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="icon" type="imgage/png" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">-->
+    <!-- <link href="<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <i class="icon-menu burger_button" id="burger-menu"></i>
+    <!--header es para hacer encabezados-->
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
+          <img
+            src="img/programador.png"
+            alt="Logo de la pagina"
+            height="70px"
+          />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a href="#eventos">Experiencia</a>
+            </li>
+            <li>
+              <a href="#contacto">Trabajemos Juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Hola! Soy <strong>Israel Santizo</strong> <br />
+          universitario y
+          <strong
+            >desarrollador <br />
+            WEB</strong
+          >
+          frontend
+        </h1>
+        <img
+          class="hero_img"
+          src="img/hero.jpg"
+          alt="Imagen de portada"
+          width="500px"
+          height="300px"
+        />
+      </div>
+    </section>
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2>
+          Portafolio (Proyectos Destacados)
+        </h2>
+        <article class="proyect">
+          <div class="proyect_details">
+            <h3 class="proyect_title">
+              Platzi Video
+            </h3>
+            <h6 class="proyect_course">
+              React Native / React
+            </h6>
+            <p class="proyec_date">
+              <small><strong>Fecha:</strong> 16/03/2020</small>
+            </p>
+            <p class="proyect_url">
+              <small><strong>Puedes verlo en:</strong>www.@.com</small>
+            </p>
+            <p class="proyect_description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+              deleniti officiis dolores, nihil, necessitatibus, sed adipisci
+              placeat voluptatibus velit sapiente quidem omnis excepturi est
+              quibusdam facilis sint natus in rerum.
+            </p>
+          </div>
+          <figure class="proyect_imgContainer">
+            <img
+              class="proyect_img"
+              src="img/proyecto.jpg"
+              alt="Imagen de proyecto"
+              width="500"
+            />
+          </figure>
+        </article>
+        <article class="proyect">
+          <div class="proyect_details">
+            <h3 class="proyect_title">
+              Platzi Video
+            </h3>
+            <h6 class="proyect_course">
+              React Native / React
+            </h6>
+            <p class="proyec_date">
+              <small><strong>Fecha:</strong> 16/03/2020</small>
+            </p>
+            <p class="proyect_url">
+              <small><strong>Puedes verlo en:</strong>www.@.com</small>
+            </p>
+            <p class="proyect_description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+              deleniti officiis dolores, nihil, necessitatibus, sed adipisci
+              placeat voluptatibus velit sapiente quidem omnis excepturi est
+              quibusdam facilis sint natus in rerum.
+            </p>
+          </div>
+          <figure class="proyect_imgContainer">
+            <img
+              class="proyect_img"
+              src="img/proyecto.jpg"
+              alt="Imagen de proyecto"
+              width="500"
+            />
+          </figure>
+        </article>
+      </div>
+    </section>
+    <div class="container">
+      <h2 class="event_list_title">Mas sobre mi Experiencia</h2>
+    </div>
+    <section id="eventos" class="event_list">
+      <div class="container">
+        <article class="event">
+          <figure class="event_img">
+            <video
+              class="html_video"
+              src="img/video.mp4"
+              width="1920px"
+              height="1080px"
+              controls
+              <!--
+            ></video>
+            -->
+            <!-- <img
+              class="event_img"
+              src="img/evento.jpg"
+              alt="Mas sobre mi experiencia"
+              width="500"
+            /> -->
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">
+              Proyecto 2020 Desarrollo WEB
+            </h3>
+            <p class="event_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+              quibusdam consequuntur non explicabo earum, qui, vero alias ipsa
+              illo aliquam tenetur? Nesciunt vitae amet dolorum vero id
+              provident molestiae nihil.
+            </p>
+            <a
+              class="event_url"
+              href="https://www.youtube.com/watch?v=8Hulg-J0D7Q"
+              target="_blank"
+              >Ver mas sobre la imagen</a
+            ><!--blank es para que abra otra pestania-->
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event_img">
+            <!-- <img
+              class="event_img"
+              src="img/evento.jpg"
+              alt="Mas sobre mi experiencia"
+              width="500"
+            /> -->
+            <div class="flexible_video">
+              <iframe
+                class="youtube_video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ovAWuW4pN-U"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">
+              Proyecto 2020 Desarrollo WEB
+            </h3>
+            <p class="event_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              quod aspernatur quas aliquid sapiente iure voluptatum beatae
+              facere consequatur, reiciendis, labore dolorem autem odio nulla
+              eligendi iste repellendus vero iusto.
+            </p>
+            <a
+              class="event_url"
+              href="https://www.youtube.com/watch?v=8Hulg-J0D7Q"
+              target="_blank"
+              >Ver mas sobre la imagen</a
+            ><!--blank es para que abra otra pestania-->
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event_img">
+            <img
+              class="event_img"
+              src="img/evento.jpg"
+              alt="Mas sobre mi experiencia"
+              width="500"
+            />
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">
+              Proyecto 2020 Desarrollo WEB
+            </h3>
+            <p class="event_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              suscipit quod vel nobis accusantium, dolore architecto at animi,
+              odio perspiciatis laboriosam nemo incidunt? Porro sunt blanditiis
+              voluptatum quidem, adipisci voluptates.
+            </p>
+            <a
+              class="event_url"
+              href="https://www.youtube.com/watch?v=8Hulg-J0D7Q"
+              target="_blank"
+              >Ver mas sobre la imagen</a
+            ><!--blank es para que abra otra pestania-->
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event_img">
+            <img
+              class="event_img"
+              src="img/evento.jpg"
+              alt="Mas sobre mi experiencia"
+              width="500"
+            />
+          </figure>
+          <div class="event_detail">
+            <h3 class="event_title">
+              Proyecto 2020 Desarrollo WEB
+            </h3>
+            <p class="event_description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Obcaecati expedita quas iste! Expedita ea molestias dignissimos,
+              architecto culpa maxime? Blanditiis exercitationem omnis earum
+              laudantium doloribus quia aliquam ipsam soluta eos.
+            </p>
+            <a
+              class="event_url"
+              href="https://www.youtube.com/watch?v=8Hulg-J0D7Q"
+              target="_blank"
+              >Ver mas sobre la imagen</a
+            ><!--blank es para que abra otra pestania-->
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contacto" class="contact">
+      <div class="container">
+        <form action="/suscripcion/" class="form_email">
+          <h3>Creamos algo juntos?</h3>
+          <input
+            type="text"
+            value=""
+            id="email"
+            placeholder="Dejame tu email"
+          />
+          <!--value deja texto que el usuario puede borrar placeholder texto que no puede modificar-->
+          <button>
+            Enviar
+          </button>
+        </form>
+        <div class="social">
+          <a href="" class="social_link twitter"></a>
+          <a href="" class="social_link facebook"></a>
+          <a href="" class="social_link github"></a>
+          <a
+            href="https://www.instagram.com/israel_santos98"
+            class="social_link instagram"
+          ></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>
+            Curso de desarrollo web online 2020
+            <img src="img/footer.png" alt="img del footer" width="80px" />
+          </p>
+        </div>
+        <div>
+          <p>
+            Design with ♥ by
+            <a href="https://www.instagram.com/israel_santos98" target="_blank"
+              >@israel_santos98</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

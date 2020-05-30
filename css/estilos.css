@@ -1,0 +1,547 @@
+/*
+Shaiden Rogue 
+body{
+    background: red; /*Se coloca !important para darle prioridad a este color
+}
+*/
+/* descendentes body header div ol li a*/
+/*.class*/
+/* #id*/
+/*padding = relleno*/
+/*Icono*/
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?1odymq");
+  src: url("../fonts/icomoon.eot?1odymq#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?1odymq") format("truetype"),
+    url("../fonts/icomoon.woff?1odymq") format("woff"),
+    url("../fonts/icomoon.svg?1odymq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+/*Icono*/
+body {
+  font-family: /*'Source Sans Pro'*/ "Roboto", sans-serif;
+  margin: 0px; /*Quita el margen de todo el body en los costados*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: /*'Fjalla One'*/ "Noto Sans", sans-serif;
+  font-weight: normal;
+  /*font-style: italic;*/
+}
+body header div nav ol {
+  margin: -1px;
+}
+/*Salto de linea para el espacio del titulo, 1.5em es el tamaño de la fuente*/
+h1 {
+  font-size: 40px; /*Tamañio de la fuente*/
+  line-height: 1.5em; /*Espacio entre parrafos o saltos de lineas*/
+  letter-spacing: -0.2px; /*Espacio entre letras*/
+  color: white;
+  margin: 0;
+  /*text-transform: uppercase;/*Cambiar la letra en mayusculas todas*/
+  /*text-decoration: underline;/*Decoracion de texto con subrayado*/
+  /*margin: 1px 150px 70px 30px;*/
+}
+
+h1 strong {
+  color: #026fff;
+}
+h2 {
+  color: #026fff;
+  text-transform: uppercase; /*Coloca mayusculas todo los h2*/
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+/*Su funcion es el de dar estilo al borde, margen y relleno al section de portafolio de (proyectos destacados)*/
+.hero {
+  height: 300px;
+  background-color: #1b2127;
+  /*background-image: url('../img/hero.jpg');/*url relativa, con ../ se sale de la carpeta de css y poder ir a la carpeta de img*/
+  /*background-size: 500px 300px;/*Para colocarle tamañio al fondo de pantalla de imagen*/
+  /*background-repeat: no-repeat;/*Para que la imagen no se repita ya que por el tamañio se repetia varias veces*/
+  /*background-position-x: right;/*Mueve el el fondo de pantalla a la derecha*/
+  display: flex;
+  align-items: center; /*junto con flex alinearon el texto de hero al centro verticalmente*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero_img {
+  object-fit: cover; /*para que no se vea de mala forma la imagen*/
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.proyect {
+  border: 1px solid gray; /*Borde superior top, right, left and bottom\ se coloca el tamaño, style del border y el color*/
+  border-radius: 10px; /*Realiza un redondeo del borde*/
+  margin-bottom: 15px; /*Ayuda a separar entre proyectos o div */
+  margin: 10px;
+  padding: 20px; /*Coloca relleno al div de proyect para que no este pegado al border*/
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*flex-wrap: nowrap;/*Significa que por mas elementos que tengamos no habra un salto de linea*/
+  flex-wrap: wrap; /*Permite que al finalizar la pantalla esta puedan tener un salto de linea*/
+}
+.proyect_course,
+.proyect_date,
+.proyect_url {
+  margin: 10px 0;
+}
+.proyect_description {
+  font-size: 20px;
+}
+.proyect strong {
+  font-family: "Noto Sans", sans-serif;
+}
+.proyect_title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.proyect_details {
+  width: 50%;
+  /*margin: auto;/*Sirve para alinear el contenido al centro o la mitad del espacio que tenga la section*/
+  /*flex-shrink: 0;/*Hace que no se redimensine el contenido si no que lo deje con el mismo tamaño se coloca al hijo del flex*/
+}
+
+.proyect_imgContainer {
+  width: 50%;
+}
+.proyect_imgContainer img {
+  /*Con esto hace la imagen sea responsive*/
+  max-width: 100%;
+}
+/*Se coloca el color de fondo unicamente a header que es el contenedor del navbar y se coloca los elementos de texto blanco*/
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex; /*Coloca el logo y las etiquetas de lista en la misma linea*/
+  align-items: center;
+  justify-content: space-between; /*coloca las etiquetas a separadas a la derecha*/
+  height: 80px; /*coloco el tamaño que tiene el header en total con el logo, y en las demas heredamos el mismo tamaño para que los li tenga el mismo altp*/
+  flex-wrap: wrap;
+}
+/*Colocar los enlaces de color blanco y quitando el hipervinculo de subrayado*/
+.header a {
+  color: white;
+  text-decoration: none; /*quita los hiperviculos de la etiquetas a */
+}
+/*el nombre es de la class navbar*/
+.menu {
+  height: inherit;
+}
+/**/
+.header ol {
+  display: flex;
+  height: inherit; /**/
+}
+/*para heredar*/
+.header ol li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+/*quita el margen y el estilo a las lista que tenemos en el header*/
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Quitar margenes a los figure*/
+figure {
+  margin: 0;
+}
+.event_list {
+  display: flex;
+  flex-wrap: wrap; /*para colocar varias imaganes abajo y no que se vayan a la derecha y salirse de la pantalla*/
+}
+.event_list_title {
+  margin-left: 20px;
+}
+.event {
+  margin: 1%;
+  width: 48%;
+  border-radius: 10px;
+  overflow: hidden; /*Oculta las esquinas que se salgan de border radius*/
+  flex-shrink: 0; /*hace que el elemento tenga el tamaño que se le asigno*/
+  background: #f4fbff;
+}
+.event img {
+  width: 480px;
+  object-fit: cover; /*Coloca la imagen con proporciones para que quede en la card de eventos*/
+}
+.event_detail {
+  margin: 20px 40px;
+  background-color: white;
+  margin-top: -40px;
+  position: relative; /*Lo coloca al inicio o como la primera cosa que se ve*/
+  padding: 20px;
+  text-align: center;
+}
+.event_description {
+  text-align: left;
+}
+.event_url {
+  border: 1px solid #056fff;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #056fff;
+  border-radius: 5px;
+}
+/*Area de contacto*/
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*Mueve */
+  flex-wrap: wrap;
+}
+.social {
+}
+.social_link {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px; /*ancho, alto*/
+}
+.social_link.twitter {
+  background-image: url("../img/twitter.svg");
+}
+.social_link.facebook {
+  background-image: url("../img/twitter.svg");
+}
+.social_link.github {
+  background-image: url("../img/twitter.svg");
+}
+.social_link.instagram {
+  background-image: url("../img/twitter.svg");
+}
+.form_email input {
+  border-color: grey;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url(../img/correo.svg);
+  background-size: 15px 15px; /*ancho, alto*/
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.form_email button {
+  display: block;
+  /*margin-top: 10px;*/
+  background: transparent;
+  color: white;
+  padding: 10px 0; /*ancho, alto*/
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+  /*margin: 10px auto 0; /*para centrar el boton */
+}
+.form_email h3 {
+  font-family: "Noto Sans", sans-serif;
+}
+/*Footer*/
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/*para alinear el footer verticalmente*/
+.footer img {
+  vertical-align: middle;
+}
+.footer a {
+  color: white;
+}
+/*Corrigiento detalles*/
+.container {
+  /*border: 1px solid red;*/
+  max-width: 1000px;
+  /* width: 100%; */
+  flex: 1;
+  margin: 0 auto; /*centrar el elemento*/
+  /*heredamos lo que teniamos antes con inherit*/
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  padding: 0 1em;
+}
+.html_video {
+  width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+}
+/*
+Para saber la dimencion que debe tener el video insertado en Youtube se usa la siguiente regla
+h*100/w --> alto * 100 / ancho
+*/
+.youtube_video {
+  /* width: 100%; */
+  /* height: auto; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.flexible_video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+.burger_button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 20;
+  left: 5px;
+  top: 5px;
+  color: #fff;
+  /* font-size: 20px; */
+}
+@media screen and (max-width: 1920px) {
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 10;
+  }
+  .hero_img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 1024px) {
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 10;
+  }
+  .hero_img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  } 
+}*/
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    /*initial toma el tipo de display con la que se creo la etiqueta*/
+    display: block;
+  }
+  .header ol li {
+    height: 50px;
+  }
+  .header a {
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+  }
+  .header .logo {
+    text-align: center;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .proyect {
+    display: block;
+  }
+  .proyect_imgContainer {
+    width: auto;
+    text-align: center;
+  }
+  .proyect_details {
+    width: auto;
+    /* font-size: 16px; */
+  }
+  .proyect_course,
+  .proyect_date,
+  .proyect_url {
+    margin: 0.3em 0;
+  }
+  /*Elemento padre proyect_details*/
+  .proyect_title {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  .proyect_url {
+    font-size: 1em;
+  }
+  .proyect_course {
+    font-size: 0.7em;
+  }
+  .proyect_date {
+    font-size: 1.2em;
+  }
+  .proyect_description {
+    font-size: 0.8em;
+  }
+  .event {
+    width: auto;
+    /*Sirve para que el elemento no haga redimension con display flex*/
+    flex-shrink: initial;
+  }
+  .event img {
+    width: 100%;
+  }
+  .hero {
+    height: auto;
+    position: relative;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 10;
+  }
+  .hero_img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .burger_button {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    background-color: rgba(5, 111, 255, 0.9);
+    z-index: 15;
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  /*cuando este elemento tenga las dos clase* se efectue lo que dice alli*/
+  .menu.is_active {
+    left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .proyect_details {
+    font-size: 12px;
+  }
+  .event_detail {
+    /* 1em = 16px */
+    margin: -2em 0.5em 0.5em 0.5em;
+    padding: 1em;
+  }
+  .contact {
+    display: block;
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  .form_email button {
+    margin: 1em auto;
+  }
+  .form_email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .hero {
+    padding: 2em 1em;
+  }
+
+  .social a {
+    margin: 0;
+  }
+}
